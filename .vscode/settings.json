@@ -1,0 +1,13 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Solarized Dark",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.fontSize": 16,
+  "editor.fontSize": 16,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+}
+
+
+
+
