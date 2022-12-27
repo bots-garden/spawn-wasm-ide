@@ -1,0 +1,19 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Cobalt2",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.fontSize": 16,
+  "editor.fontSize": 16,
+  "gopls": {
+    "experimentalWorkspaceModule": true,
+  },
+  "go.useLanguageServer": true,
+  "go.toolsEnvVars": {
+    "GOOS": "linux",
+    "GOARCH": "arm64",
+  },
+}
+
+
+
+

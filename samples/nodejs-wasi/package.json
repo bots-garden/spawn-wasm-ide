@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fastify": "^4.10.2",
+    "wasi-tinygo-js": "^0.0.2"
+  }
+}

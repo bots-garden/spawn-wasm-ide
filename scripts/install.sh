@@ -10,3 +10,4 @@
 . 09-install-zellij.sh
 . 10-install-wasm-runtimes.sh
 . 11-install-extism.sh
+. 12-install-hey.sh
