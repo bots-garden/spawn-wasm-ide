@@ -8,7 +8,7 @@ This project allows to create a Multipass VM with OpenVSCode server installed. A
 
 - Update the configuration environment variables: `./config/.env`
 - Create the VM: `./create-vm.sh`
-- Open the WEB IDE with this url [http://<IP_ADDRESS_OF_THE_VM>:8080/?folder=/home/ubuntu/scripts](http://<IP_ADDRESS_OF_THE_VM>:8080/?folder=/home/ubuntu/scripts)
+- Open the WEB IDE with this url [http://<IP_ADDRESS_OF_THE_VM>:<OPENVSCODE_SERVER_PORT>/?folder=/home/ubuntu/scripts](http://<IP_ADDRESS_OF_THE_VM>:8080/?folder=/home/ubuntu/scripts)
   - see this file `./config/vm.hosts.config` to get the IP address of the VM
 - run this command `. install.sh` to install all tools, language support, runtimes...
 

@@ -2,5 +2,7 @@
   "recommendations": [
     "pkief.material-icon-theme",
     "daltonmenezes.aura-theme",
+    "bungcip.better-toml",
+    "rust-lang.rust-analyzer"
   ]
 }
