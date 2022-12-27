@@ -13,6 +13,7 @@ multipass launch --name ${VM_NAME} \
 # share the directories 
 multipass mount scripts ${VM_NAME}:scripts
 multipass mount workspace ${VM_NAME}:workspace
+multipass mount samples ${VM_NAME}:samples
 
 VM_IP=$(multipass info ${VM_NAME} | grep IPv4 | awk '{print $2}')
 
@@ -32,6 +33,7 @@ cd openvscode-server-v${OPENVSCODE_SERVER_VERSION}-${OPENVSCODE_SERVER_OS}-${OPE
 ./bin/openvscode-server --port ${OPENVSCODE_SERVER_PORT} --host ${VM_IP} --without-connection-token &
 echo "🌍 http://${VM_IP}:8080/?folder=/home/ubuntu/scripts"
 echo "🌍 http://${VM_IP}:8080/?folder=/home/ubuntu/workspace"
+echo "🌍 http://${VM_IP}:8080/?folder=/home/ubuntu/samples"
 EOF
 
 echo "+-----------------------------------------------+"

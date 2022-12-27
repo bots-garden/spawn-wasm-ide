@@ -1,13 +1,6 @@
 #!/bin/bash
+set -o allexport; source config/.env; set +o allexport
 
-
-GOLANG_VERSION="1.19.3"
-GOLANG_OS="linux"
-GOLANG_ARCH="arm64"
-HOME_VALUE="/home/ubuntu"
-
-TINYGO_VERSION="0.26.0"
-TINYGO_ARCH="arm64"
 
 echo "Installing Go & TinyGo"
 
