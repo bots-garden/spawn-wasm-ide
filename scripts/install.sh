@@ -11,3 +11,7 @@
 . 10-install-wasm-runtimes.sh
 . 11-install-extism.sh
 . 12-install-hey.sh
+. 13-install-swift.sh
+. 14-install-wasm-workers-server.sh
+. 15-install-java.sh
+. 16-install-fermyon-spin.sh

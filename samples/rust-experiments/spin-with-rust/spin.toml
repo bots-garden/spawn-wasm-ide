@@ -1,0 +1,14 @@
+spin_version = "1"
+authors = ["ubuntu"]
+description = "this is a demo of spin with rust"
+name = "spin-with-rust"
+trigger = { type = "http", base = "/" }
+version = "0.1.0"
+
+[[component]]
+id = "spin-with-rust"
+source = "target/wasm32-wasi/release/spin_with_rust.wasm"
+[component.trigger]
+route = "/..."
+[component.build]
+command = "cargo build --target wasm32-wasi --release"
