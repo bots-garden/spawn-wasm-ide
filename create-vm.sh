@@ -31,9 +31,9 @@ rm openvscode-server-v${OPENVSCODE_SERVER_VERSION}-${OPENVSCODE_SERVER_OS}-${OPE
 echo "🚀 Start OpenVSCode Server"
 cd openvscode-server-v${OPENVSCODE_SERVER_VERSION}-${OPENVSCODE_SERVER_OS}-${OPENVSCODE_SERVER_ARCH}
 ./bin/openvscode-server --port ${OPENVSCODE_SERVER_PORT} --host ${VM_IP} --without-connection-token &
-echo "🌍 http://${VM_IP}:8080/?folder=/home/ubuntu/scripts"
-echo "🌍 http://${VM_IP}:8080/?folder=/home/ubuntu/workspace"
-echo "🌍 http://${VM_IP}:8080/?folder=/home/ubuntu/samples"
+echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/scripts"
+echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/workspace"
+echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/samples"
 EOF
 
 echo "+-----------------------------------------------+"
