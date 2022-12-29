@@ -28,6 +28,23 @@ wget https://github.com/gitpod-io/openvscode-server/releases/download/openvscode
 tar -xzf openvscode-server-v${OPENVSCODE_SERVER_VERSION}-${OPENVSCODE_SERVER_OS}-${OPENVSCODE_SERVER_ARCH}.tar.gz
 rm openvscode-server-v${OPENVSCODE_SERVER_VERSION}-${OPENVSCODE_SERVER_OS}-${OPENVSCODE_SERVER_ARCH}.tar.gz
 
+#echo "🚀 Start OpenVSCode Server"
+#cd openvscode-server-v${OPENVSCODE_SERVER_VERSION}-${OPENVSCODE_SERVER_OS}-${OPENVSCODE_SERVER_ARCH}
+#./bin/openvscode-server --port ${OPENVSCODE_SERVER_PORT} --host ${VM_IP} --without-connection-token &
+#echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/scripts"
+#echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/workspace"
+#echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/samples"
+EOF
+
+echo "+-----------------------------------------------+"
+echo "🖐️ update your /etc/hosts file with:"
+cat config/vm.hosts.config
+echo "+-----------------------------------------------+"
+multipass stop ${VM_NAME}
+
+multipass start ${VM_NAME}
+
+multipass --verbose exec ${VM_NAME} -- bash <<EOF
 echo "🚀 Start OpenVSCode Server"
 cd openvscode-server-v${OPENVSCODE_SERVER_VERSION}-${OPENVSCODE_SERVER_OS}-${OPENVSCODE_SERVER_ARCH}
 ./bin/openvscode-server --port ${OPENVSCODE_SERVER_PORT} --host ${VM_IP} --without-connection-token &
@@ -36,7 +53,3 @@ echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/worksp
 echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/samples"
 EOF
 
-echo "+-----------------------------------------------+"
-echo "🖐️ update your /etc/hosts file with:"
-cat config/vm.hosts.config
-echo "+-----------------------------------------------+"
