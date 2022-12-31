@@ -1,10 +1,11 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Abyss",
+  "workbench.colorTheme": "Kimbie Dark",
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.fontSize": 16,
   "editor.fontSize": 16,
 }
+
 
 
 

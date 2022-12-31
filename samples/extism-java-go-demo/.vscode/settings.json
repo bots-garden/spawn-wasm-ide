@@ -1,6 +1,6 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Visual Studio Light",
+  "workbench.colorTheme": "Abyss",
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.fontSize": 16,
   "editor.fontSize": 16,
@@ -15,6 +15,7 @@
     "experimentalWorkspaceModule": true,
    },
 }
+
 
 
 

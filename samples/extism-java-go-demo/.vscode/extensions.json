@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "pkief.material-icon-theme",
+    "daltonmenezes.aura-theme",
+    "vscjava.vscode-java-pack",
+    "rust-lang.rust-analyzer",
+    "golang.go",
+    "bungcip.better-toml",
+  ]
+}

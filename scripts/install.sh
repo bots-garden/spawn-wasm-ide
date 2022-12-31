@@ -14,4 +14,5 @@
 . 13-install-swift.sh
 . 14-install-wasm-workers-server.sh
 . 15-install-java.sh
-. 16-install-fermyon-spin.sh
+. 16-install-maven.sh
+. 17-install-fermyon-spin.sh

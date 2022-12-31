@@ -1,6 +1,6 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Visual Studio Light",
+  "workbench.colorTheme": "Tomorrow Night Blue",
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.fontSize": 16,
   "editor.fontSize": 16,
@@ -13,8 +13,10 @@
   },
   "gopls": {
     "experimentalWorkspaceModule": true,
-   },
+  },
+  "java.configuration.updateBuildConfiguration": "automatic",
 }
+
 
 
 
