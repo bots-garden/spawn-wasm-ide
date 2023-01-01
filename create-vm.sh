@@ -19,6 +19,9 @@ VM_IP=$(multipass info ${VM_NAME} | grep IPv4 | awk '{print $2}')
 
 multipass info ${VM_NAME}
 
+multipass exec ${VM_NAME} -- sudo -- sh -c "echo \"${VM_IP} ${VM_DOMAIN}\" >> /etc/hosts"
+
+
 echo "${VM_IP} ${VM_DOMAIN}" > config/vm.hosts.config
 
 # Install and Start OpenVSCode Server

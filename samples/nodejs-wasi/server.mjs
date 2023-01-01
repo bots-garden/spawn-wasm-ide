@@ -69,10 +69,18 @@ const start = async () => {
   //}
 
   try {
-    await fastify.listen({ port: 3000 })
+    await fastify.listen({ port: 3000, host: '0.0.0.0'})
   } catch (err) {
     fastify.log.error(err)
     process.exit(1)
   }
 }
 start().then(r => console.log("😄 started"))
+
+/*
+'0.0.0.0'
+When deploying to a Docker, and potentially other, containers, 
+it is advisable to listen on 0.0.0.0 because 
+they do not default to exposing mapped ports to localhost
+https://www.fastify.io/docs/latest/Reference/Server/#listen
+*/

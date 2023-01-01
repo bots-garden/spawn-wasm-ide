@@ -1,6 +1,8 @@
 #!/bin/bash
 set -o allexport; source config/.env; set +o allexport
 
+multipass stop ${VM_NAME}
+
 multipass start ${VM_NAME}
 
 VM_IP=$(multipass info ${VM_NAME} | grep IPv4 | awk '{print $2}')

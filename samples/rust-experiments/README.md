@@ -22,5 +22,5 @@ spin new
 cd <name-of-the-project>
 # rustup target add wasm32-wasi
 spin build
-spin up --listen 192.168.64.48:8888 # use the IP of the VM
+spin up --listen 192.168.64.48:8888 # use the IP of the VM or 0.0.0.0
 ```
