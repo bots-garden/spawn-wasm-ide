@@ -6,3 +6,4 @@ sudo apt install unzip -y
 sudo apt install zip -y
 sudo apt install openssl -y
 sudo apt install libssl-dev -y
+sudo apt install git -y
