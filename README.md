@@ -18,3 +18,19 @@ This project allows to create a Multipass VM with OpenVSCode server installed. A
 - Start the VM: `./start-vm.sh`
 - SSH connect: `./shell-vm.sh`
 - Drop the VM: `./destroy-vm.sh`
+
+## SSH Keys
+
+> open a shell in the VM
+```bash
+set -o allexport; source config/.env; set +o allexport
+multipass shell ${VM_NAME}
+```
+
+```bash
+
+ssh-keygen -o -t rsa -C "your@mail"
+cat /home/ubuntu/.ssh/id_rsa.pub
+git config --global user.email "your@mail"
+git config --global user.name "your_name"
+```
