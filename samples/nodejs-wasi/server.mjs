@@ -46,6 +46,22 @@ const start = async () => {
      -d 'Bob Morane'
      */
   var counter = 0
+
+  fastify.post('/hey', opts, async (request, reply) => {
+    let result = request.body+" "+counter
+    counter+=1
+
+    var sum = 0
+
+    for(var i = 0; i < 100000; i++){
+        doSomething();
+        sum += i
+    }
+
+    fastify.log.info(`🙂 ${result.toString()}`)
+    return "🙂 " + result.toString()
+  })
+
   fastify.post('/hello', opts, async (request, reply) => {
 
     let success = await wasmModule.initialize()

@@ -1,12 +1,19 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Aura Dark (Soft Text)",
+  "workbench.colorTheme": "GitHub Dark Dimmed",
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.fontSize": 16,
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
+  "go.useLanguageServer": true,
+  "go.toolsGopath": "/home/ubuntu/go/",
+  "go.gopath": "/home/ubuntu/go/",
+  "go.toolsEnvVars": {
+    "GOOS": "linux",
+    "GOARCH": "arm64",
+  },
+  "gopls": {
+    "experimentalWorkspaceModule": true,
+   },
 }
-
-
-
 
 
