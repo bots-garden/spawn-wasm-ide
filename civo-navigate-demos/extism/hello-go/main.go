@@ -6,12 +6,13 @@ import (
 
 //export helloWorld
 func helloWorld() int32 {
-	input := pdk.Input()
 	
+	input := pdk.Input()
 
-	output := `{"message": "👋 Hello World 🌍","input": "` + string(input) + `"}`
+	output := `{"message": "👋 Hello World 🌍 from Go","input": "` + string(input) + `"}`
 
 	mem := pdk.AllocateString(output)
+	
 	// zero-copy output to host
 	pdk.OutputMemory(mem)
 

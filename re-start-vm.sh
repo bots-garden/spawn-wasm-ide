@@ -13,5 +13,9 @@ cd openvscode-server-v${OPENVSCODE_SERVER_VERSION}-${OPENVSCODE_SERVER_OS}-${OPE
 echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/scripts"
 echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/workspace"
 echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/samples"
+echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/apps"
+echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/servers"
+echo "🌍 http://${VM_IP}:${OPENVSCODE_SERVER_PORT}/?folder=/home/ubuntu/civo-navigate-demos"
+
 EOF
 

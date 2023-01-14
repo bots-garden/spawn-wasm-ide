@@ -16,3 +16,12 @@
 . 15-install-java.sh
 . 16-install-maven.sh
 . 17-install-fermyon-spin.sh
+
+. 50-install-k9s.sh
+. 51-install-k8s-tools.sh
+. 53-install-knative-cli.sh
+. 54-install-docker.sh
+
+#. 97-install-terraform-cli.sh
+#. 98-install-fermyon-platform.sh 🚧 this is a work in progress
+#. 99-install-dot-net.sh 🚧 this is a work in progress
