@@ -50,15 +50,13 @@ func LoadWasmFile(wasmFilePath string) ([]byte, error) {
 func InstantiateWasmModule(wasmRuntime wazero.Runtime, ctx context.Context, wasmFile []byte) (api.Module, error) {
 
 	// Instantiate the WebAssembly module
-	wasmModule, err := wasmRuntime.InstantiateModuleFromBinary(ctx, wasmFile)
+	wasmModule, err := wasmRuntime.Instantiate(ctx, wasmFile)
 	if err != nil {
 		//log.Panicln(err)
 		return nil, err
 	}
 	return wasmModule, nil
 }
-
-
 
 func CopyBufferParameterToMemory(wasmModule api.Module, ctx context.Context, param []byte) (uint64, uint64, error) {
 	paramSize := uint64(len(param))
